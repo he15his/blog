@@ -48,6 +48,7 @@
     * 自动化构建
     * 响应链
     * Native与js交互
+    * H5启动速度优化
 * [Python](python.md)
 * [网络](wang-luo.md)
   * [http](wang-luo/http.md)
