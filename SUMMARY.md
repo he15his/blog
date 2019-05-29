@@ -62,12 +62,17 @@
   * [其它](wang-luo/qi-ta.md)
     * charles抓包原理和过程
 * [算法](suan-fa.md)
-  * 排序
-  * 二分法
+  * [排序](suan-fa/pai-xu.md)
+    * 冒泡排序
+    * 选择排序
+    * 插入排序
+    * 快排
+  * [二分法](suan-fa/er-fen-fa.md)
 * [数据结构](shu-ju-jie-gou.md)
   * 链表
   * 树
   * 哈希表
+  * 数组和链表的区别
 * [计算机原理](ji-suan-ji-yuan-li.md)
   * 进程间通信方式
   * 程序编译过程
