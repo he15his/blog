@@ -1,16 +1,75 @@
 # Summary
 
 * [iOS](README.md)
-  * Swift
-  * 性能优化
-  * 开源库
+  * [Swift](swift.md)
+    * 优化编译时间
+    * open/public等用法
+    * 高阶函数
+    * struct与class区别
+    * 与oc优缺点
+    * codable
+  * [性能优化](xing-neng-you-hua.md)
+    * 包大小
+    * 启动时间
+    * 卡顿监控
+    * 内存
+    * 网络优化
+    * tableview优化
+  * [开源库](kai-yuan-ku.md)
+    * SDWebImage
+    * YY
+    * MLeaksFinder
   * 逆向
-  * 底层原理
+    * 动 静态分析
+    * 包加固
+    * 动静态库原理
+    * APP运行过程
+    * 为什么crash日志能找到对应方法
+  * [底层原理](di-ceng-yuan-li.md)
+    * [runtime](di-ceng-yuan-li/runtime.md)
+      * 方法调用流程
+      * 方法交换
+    * [runloop](di-ceng-yuan-li/runloop.md)
+      * 几种model
+      * 几种源
+    * autoreleasepool
+    * weak
+    * block
+    * kvo
+    * Tagged Pointer
+    * arc
   * 多线程
+    * 线程安全
+    * 几种创建方式的异同
   * 其它
+    * MVVM MVC
+    * 模块化
+    * Cocoapods
+    * 自动化构建
+    * 响应链
+    * Native与js交互
 * [Python](python.md)
-* 网络
+* [网络](wang-luo.md)
+  * [http](wang-luo/http.md)
+    * 有哪些方法，get post区别
+  * [https](wang-luo/https.md)
+    * 加密过程
+    * HD算法
+    * 身份认证
+  * [tcp](wang-luo/tcp.md)
+    * 握手挥手过程
+    * 头部信息
+  * [其它](wang-luo/qi-ta.md)
+    * charles抓包原理和过程
 * [算法](suan-fa.md)
-* 数据结构
-* 计算机原理
+  * 排序
+  * 二分法
+* [数据结构](shu-ju-jie-gou.md)
+  * 链表
+  * 树
+  * 哈希表
+* [计算机原理](ji-suan-ji-yuan-li.md)
+  * 进程间通信方式
+  * 程序编译过程
+  * 内存区域的划分
 
