@@ -8,7 +8,7 @@
   * 底层原理
   * 多线程
   * 其它
-* Python
+* [Python](python.md)
 * 网络
 * [算法](suan-fa.md)
 * 数据结构
