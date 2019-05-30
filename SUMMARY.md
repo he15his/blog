@@ -5,7 +5,7 @@
     * [优化编译时间](swift/you-hua-bian-yi-shi-jian.md)
     * [open/public等用法](swift/openpublicdeng-yong-fa.md)
     * [高阶函数](swift/gao-jie-han-shu.md)
-    * struct与class区别
+    * [struct与class区别](swift/structyu-class-qu-bie.md)
     * 与oc优缺点
     * codable
   * [性能优化](xing-neng-you-hua.md)
