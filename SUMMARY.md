@@ -2,14 +2,14 @@
 
 * [iOS](README.md)
   * [Swift](swift.md)
-    * 优化编译时间
-    * open/public等用法
+    * [优化编译时间](swift/you-hua-bian-yi-shi-jian.md)
+    * [open/public等用法](swift/openpublicdeng-yong-fa.md)
     * 高阶函数
     * struct与class区别
     * 与oc优缺点
     * codable
   * [性能优化](xing-neng-you-hua.md)
-    * 包大小
+    * [包大小](xing-neng-you-hua/bao-da-xiao.md)
     * 启动时间
     * 卡顿监控
     * 内存
@@ -29,6 +29,7 @@
     * [runtime](di-ceng-yuan-li/runtime.md)
       * 方法调用流程
       * 方法交换
+      * crash防护
     * [runloop](di-ceng-yuan-li/runloop.md)
       * 几种model
       * 几种源
