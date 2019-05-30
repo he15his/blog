@@ -6,7 +6,7 @@
     * [open/public等用法](swift/openpublicdeng-yong-fa.md)
     * [高阶函数](swift/gao-jie-han-shu.md)
     * [struct与class区别](swift/structyu-class-qu-bie.md)
-    * 与oc优缺点
+    * [与oc优缺点](swift/yu-oc-you-que-dian.md)
     * codable
   * [性能优化](xing-neng-you-hua.md)
     * [包大小](xing-neng-you-hua/bao-da-xiao.md)
