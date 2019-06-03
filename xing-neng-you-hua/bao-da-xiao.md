@@ -20,6 +20,25 @@ MachO文件中有DATA.objcclassrefs和DATA.objcselrefs段，分别近似于“�
 删除 extension 中使用较少功能的库，自己用简单方法或者系统方法实现
 
 #### 2.4 编译选项改进
-
+打开LTO，即Link Time Optimization
+LTO能带来的优化有： （1）将一些函数內联化 （2）去除了一些无用代码 （3）对程序有全局的优化作用
+**LTO会降低编译链接的速度，因此只建议在打正式包时开启**
 
 ##资源
+
+* 排查和清除冗余图片[地址](https://github.com/tinymind/LSUnusedResources)
+* ImageOptim基本可以压缩到原图片的30%
+* 修改optimization设置
+* 使用webP替代png
+* 将图片放置到云端
+* 资源文件云端下载
+* 使用 icon-font 代替图片
+* 利用tint color精简单色图标
+* 优化 cocopods 中重复的图片
+
+
+![](http://upload-images.jianshu.io/upload_images/11994763-36d37b54a1cdd29c?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](http://upload-images.jianshu.io/upload_images/11994763-5b24f5ac5b6600a2?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
