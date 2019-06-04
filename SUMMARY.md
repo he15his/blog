@@ -12,9 +12,9 @@
     * [包大小](xing-neng-you-hua/bao-da-xiao.md)
     * [启动时间](xing-neng-you-hua/qi-dong-shi-jian.md)
     * [卡顿监控](xing-neng-you-hua/qia-dun-jian-kong.md)
-    * 内存
-    * 网络优化
-    * tableview优化
+    * [内存](xing-neng-you-hua/nei-cun.md)
+    * [网络优化](xing-neng-you-hua/wang-luo-you-hua.md)
+    * [tableview优化](xing-neng-you-hua/tableviewyou-hua.md)
   * [开源库](kai-yuan-ku.md)
     * SDWebImage
     * YY
