@@ -11,7 +11,7 @@
   * [性能优化](xing-neng-you-hua.md)
     * [包大小](xing-neng-you-hua/bao-da-xiao.md)
     * [启动时间](xing-neng-you-hua/qi-dong-shi-jian.md)
-    * 卡顿监控
+    * [卡顿监控](xing-neng-you-hua/qia-dun-jian-kong.md)
     * 内存
     * 网络优化
     * tableview优化
