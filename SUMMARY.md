@@ -55,7 +55,7 @@
   * [http](wang-luo/http.md)
     * [HTTP方法有哪些](wang-luo/http/you-na-xie-fang-fa-ff0c-get-post-qu-bie.md)
     * [get post 区别](wang-luo/http/get-post-qu-bie.md)
-    * [http/2.0与http/1.1区别](wang-luo/http/http20yu-http-1-1-qu-bie.md)
+    * [HTTP1.0、1.1、2.0区别](wang-luo/http/http20yu-http-1-1-qu-bie.md)
   * [https](wang-luo/https.md)
     * 加密过程
     * HD算法
