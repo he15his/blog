@@ -1,0 +1,10 @@
+* 三次握手  
+    1. Client端发送连接请求报文  
+    2. Server端接收连接请求，并回复ACK报文，并为此次连接分配资源  
+    3. Client端接收ACK报文，向Server端发送ACK报文，并分配资源  
+* 四次挥手  
+    1. Client端发送中断请求，即FIN报文  
+    2. Server端收到FIN报文，发送ACK报文，并继续发送数据  
+    3. Client端收到ACK报文，进入FIN_WAIT状态  
+    4. Server端数据发送完毕，发送FIN报文  
+    5. Client端收到FIN报文，发送ACK报文，等待2MSL
