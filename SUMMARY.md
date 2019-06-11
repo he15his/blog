@@ -53,7 +53,8 @@
 * [Python](python.md)
 * [网络](wang-luo.md)
   * [http](wang-luo/http.md)
-    * 有哪些方法，get post区别
+    * [HTTP方法有哪些](wang-luo/http/you-na-xie-fang-fa-ff0c-get-post-qu-bie.md)
+    * [get post 区别](wang-luo/http/get-post-qu-bie.md)
   * [https](wang-luo/https.md)
     * 加密过程
     * HD算法
