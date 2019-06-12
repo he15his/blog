@@ -64,8 +64,11 @@
   * [tcp](wang-luo/tcp.md)
     * [握手挥手过程](wang-luo/tcp/wo-shou-hui-shou-guo-cheng.md)
     * 头部信息
+    * 滑动窗口协议
+    * 流量控制
+    * 拥塞控制
   * [其它](wang-luo/qi-ta.md)
-    * charles抓包原理和过程
+    * [charles抓包原理和过程](wang-luo/qi-ta/charleszhua-bao-yuan-li-he-guo-cheng.md)
   * [网络分层](wang-luo/wang-luo-fen-ceng.md)
 * [算法](suan-fa.md)
   * [排序](suan-fa/pai-xu.md)
