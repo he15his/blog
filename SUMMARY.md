@@ -63,10 +63,10 @@
     * 身份认证
   * [tcp](wang-luo/tcp.md)
     * [握手挥手过程](wang-luo/tcp/wo-shou-hui-shou-guo-cheng.md)
-    * 头部信息
-    * 滑动窗口协议
-    * 流量控制
-    * 拥塞控制
+    * [头部信息](wang-luo/tcp/tou-bu-xin-xi.md)
+    * [滑动窗口协议](wang-luo/tcp/hua-dong-chuang-kou-xie-yi.md)
+    * [流量控制](wang-luo/tcp/liu-liang-kong-zhi.md)
+    * [拥塞控制](wang-luo/tcp/yong-sai-kong-zhi.md)
   * [其它](wang-luo/qi-ta.md)
     * [charles抓包原理和过程](wang-luo/qi-ta/charleszhua-bao-yuan-li-he-guo-cheng.md)
   * [网络分层](wang-luo/wang-luo-fen-ceng.md)
