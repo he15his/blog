@@ -78,6 +78,7 @@
     * [选择排序](suan-fa/pai-xu/xuan-ze-pai-xu.md)
     * [插入排序](suan-fa/pai-xu/cha-ru-pai-xu.md)
     * [快排](suan-fa/pai-xu/kuai-pai.md)
+    * [堆排序](suan-fa/pai-xu/dui-pai-xu.md)
   * [二分法](suan-fa/er-fen-fa.md)
 * [数据结构](shu-ju-jie-gou.md)
   * 链表
