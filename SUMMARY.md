@@ -74,10 +74,10 @@
   * [网络分层](wang-luo/wang-luo-fen-ceng.md)
 * [算法](suan-fa.md)
   * [排序](suan-fa/pai-xu.md)
-    * 冒泡排序
-    * 选择排序
-    * 插入排序
-    * 快排
+    * [冒泡排序](suan-fa/pai-xu/mao-pao-pai-xu.md)
+    * [选择排序](suan-fa/pai-xu/xuan-ze-pai-xu.md)
+    * [插入排序](suan-fa/pai-xu/cha-ru-pai-xu.md)
+    * [快排](suan-fa/pai-xu/kuai-pai.md)
   * [二分法](suan-fa/er-fen-fa.md)
 * [数据结构](shu-ju-jie-gou.md)
   * 链表
