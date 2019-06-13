@@ -2,14 +2,16 @@
 
 
 
+![image-20190613210308277](cha-ru-pai-xu.assets/image-20190613210308277.png)
+
 
 
 ```c
-//插入排序1
+//插入排序1(从小到大)
 void insertSort1(int *a, int n) {
     for (int i = 1; i < n; i++) {
         for (int j = 0; j < i; j ++) {
-            if (a[j] < a[i]) {
+            if (a[j] > a[i]) {
                 int temp = a[i];
                 a[i] = a[j];
                 a[j] = temp;
