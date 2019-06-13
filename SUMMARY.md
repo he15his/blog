@@ -61,6 +61,7 @@
     * 加密过程
     * HD算法
     * 身份认证
+    * 为什么不用http自己加密
   * [tcp](wang-luo/tcp.md)
     * [握手挥手过程](wang-luo/tcp/wo-shou-hui-shou-guo-cheng.md)
     * [头部信息](wang-luo/tcp/tou-bu-xin-xi.md)
