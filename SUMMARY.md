@@ -85,7 +85,7 @@
   * 链表
   * 树
   * 哈希表
-  * 数组和链表的区别
+  * [数组和链表的区别](shu-ju-jie-gou/shu-zu-he-lian-biao-de-qu-bie.md)
 * [计算机原理](ji-suan-ji-yuan-li.md)
   * 进程间通信方式
   * 程序编译过程
