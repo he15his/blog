@@ -82,6 +82,8 @@
   * [二分法](suan-fa/er-fen-fa.md)
   * [翻转二叉数](suan-fa/fan-zhuan-er-cha-shu.md)
   * [查找](suan-fa/cha-zhao.md)
+    * [顺序查找](suan-fa/cha-zhao/shun-xu-cha-zhao.md)
+    * 有序表查找
 * [数据结构](shu-ju-jie-gou.md)
   * 链表
   * 树
