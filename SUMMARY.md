@@ -84,6 +84,7 @@
   * [查找](suan-fa/cha-zhao.md)
     * [顺序查找](suan-fa/cha-zhao/shun-xu-cha-zhao.md)
     * [有序表查找](suan-fa/cha-zhao/you-xu-biao-cha-zhao.md)
+    * [二叉查找树](suan-fa/cha-zhao/er-cha-cha-zhao-shu.md)
 * [数据结构](shu-ju-jie-gou.md)
   * 链表
   * 树
