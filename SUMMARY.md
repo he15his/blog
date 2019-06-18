@@ -81,6 +81,7 @@
     * [堆排序](suan-fa/pai-xu/dui-pai-xu.md)
   * [二分法](suan-fa/er-fen-fa.md)
   * [翻转二叉数](suan-fa/fan-zhuan-er-cha-shu.md)
+  * [查找](suan-fa/cha-zhao.md)
 * [数据结构](shu-ju-jie-gou.md)
   * 链表
   * 树
