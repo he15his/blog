@@ -39,7 +39,7 @@
 
 
 
-![image-20190619141424125](/Users/he15his/GitBook/Library/Import/blog/xing-neng-you-hua/dian-liang-you-hua.assets/image-20190619141424125.png)
+![image-20190619141424125](dian-liang-you-hua.assets/image-20190619141424125.png)
 
 
 
@@ -53,7 +53,7 @@ sysdiagnose是苹果的日志系统，苹果经常会询问是否要官方帮忙
 
 
 
-![image-20190619142006967](/Users/he15his/GitBook/Library/Import/blog/xing-neng-you-hua/dian-liang-you-hua.assets/image-20190619142006967.png)
+![image-20190619142006967](dian-liang-you-hua.assets/image-20190619142006967.png)
 
 
 
@@ -65,7 +65,7 @@ sysdiagnose是苹果的日志系统，苹果经常会询问是否要官方帮忙
 
 
 
-![image-20190619135816372](/Users/he15his/GitBook/Library/Import/blog/xing-neng-you-hua/dian-liang-you-hua.assets/image-20190619135816372.png)
+![image-20190619135816372](dian-liang-you-hua.assets/image-20190619135816372.png)
 
 
 
