@@ -24,7 +24,7 @@
 
 右边会显示各个模块耗电的百分比
 
-![image-20190619135352121](/Users/he15his/GitBook/Library/Import/blog/xing-neng-you-hua/dian-liang-you-hua.assets/image-20190619135352121.png)
+![image-20190619135352121](dian-liang-you-hua.assets/image-20190619135352121.png)
 
 
 
