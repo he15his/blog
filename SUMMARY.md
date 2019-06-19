@@ -15,6 +15,7 @@
     * [内存](xing-neng-you-hua/nei-cun.md)
     * [网络优化](xing-neng-you-hua/wang-luo-you-hua.md)
     * [tableview优化](xing-neng-you-hua/tableviewyou-hua.md)
+    * [电量优化](xing-neng-you-hua/dian-liang-you-hua.md)
   * [开源库](kai-yuan-ku.md)
     * [SDWebImage](kai-yuan-ku/sdwebimage.md)
     * [YY](kai-yuan-ku/yy.md)
