@@ -63,7 +63,7 @@
     * [HTTPS密钥协商过程](wang-luo/https/jia-mi-guo-cheng.md)
     * [HTTPS 密钥复用](wang-luo/https/https-mi-yao-fu-yong.md)
     * [CA证书](wang-luo/https/cazheng-shu-he-gong-yao-de-an-quan-zen-yao-bao-zheng.md)
-    * [HD算法](wang-luo/https/hdsuan-fa.md)
+    * [HTTPS 中非对称加密的方法比较](wang-luo/https/hdsuan-fa.md)
   * [tcp](wang-luo/tcp.md)
     * [握手挥手过程](wang-luo/tcp/wo-shou-hui-shou-guo-cheng.md)
     * [头部信息](wang-luo/tcp/tou-bu-xin-xi.md)
