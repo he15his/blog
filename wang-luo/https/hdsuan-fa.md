@@ -56,6 +56,10 @@ DHE参数和Pb都是通过server key exchange发送给客户端，Pa通过client
 
 ## ECDHE
 
+ECDHE的全称叫Elliptic Curve Diffie–Hellman key Exchange椭圆曲线迪非-赫尔曼密钥交换，它是迪非-赫尔曼密钥交换的变种，使用椭圆曲线加密提高安全性。
+
+
+
 只要理解DHE密钥交换原理，那么理解ECDHE密钥交换原理其实并不难（如果不想深究的话）。
 
 ECDHE的运算是把DHE中模幂运算替换成了点乘运算，速度更快，可逆更难。
@@ -100,7 +104,7 @@ ECDHE（DHE）算法属于DH类密钥交换算法， 私钥不参与密钥的协
 
 
 
-**总结:目前主要以 RSA(百度)、DHE、ECDHE(google) 算法为主**
+**总结:目前主要以 ECDHE(google) 算法为主**
 
 
 
