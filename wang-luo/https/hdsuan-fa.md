@@ -100,7 +100,7 @@ ECDHE（DHE）算法属于DH类密钥交换算法， 私钥不参与密钥的协
 
 
 
-**总结:目前主要以 RSA、DHE、ECDHE 算法为主**
+**总结:目前主要以 RSA(百度)、DHE、ECDHE(google) 算法为主**
 
 
 
