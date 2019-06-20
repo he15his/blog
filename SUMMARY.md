@@ -61,7 +61,6 @@
   * [https](wang-luo/https.md)
     * [HTTPS密钥协商过程](wang-luo/https/jia-mi-guo-cheng.md)
     * [HD算法](wang-luo/https/hdsuan-fa.md)
-    * [身份认证](wang-luo/https/shen-fen-ren-zheng.md)
     * [为什么不用http自己加密](wang-luo/https/wei-shi-yao-bu-yong-http-zi-ji-jia-mi.md)
     * [HTTPS 密钥复用](wang-luo/https/https-mi-yao-fu-yong.md)
     * [CA证书](wang-luo/https/cazheng-shu-he-gong-yao-de-an-quan-zen-yao-bao-zheng.md)
