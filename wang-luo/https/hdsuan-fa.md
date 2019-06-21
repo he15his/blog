@@ -1,7 +1,5 @@
 # HTTPS 中非对称加密方法比较
 
-
-
 ## RSA
 
 RSA算法流程文字描述如下：
@@ -18,17 +16,11 @@ RSA算法流程文字描述如下：
 
 第二步后，客户端发送C，服务器能够使用自己的私钥进行解密，而第三方只有公钥，无法解密。即第三方无法计算得到S
 
-
-
 **RSA问题**
 
 RSA有一个问题，就是如果私钥泄漏，即私钥被第三方知道，那么第三方就能从C中解密得到S，即只要保存所有的A和B的报文，等到私钥被泄漏的那一天，或者有办法快从C中计算S的方法出现（量子计算机分解大素数），那么A和B就没有什么私密性可言了。
 
 这就是所谓的前向不安全，私钥参与了密钥交换，安全性取决于私钥是否安全保存
-
-
-
-
 
 ## DHE
 
@@ -38,13 +30,11 @@ DHE算法流程文字描述如下：
 
 （2）：服务器和客户端计算流程一样，生成一个随机值Xb，使用Xb作为指数，计算
 
-   Pb = q^Xb mod p，将结果Pb发送至客户端，Xb仅自己保存。
+Pb = q^Xb mod p，将结果Pb发送至客户端，Xb仅自己保存。
 
 （3）：客户端收到Pb后计算Sa = Pb ^Xa mod p；服务器收到Pa后计算Sb = Pa^Xb mod p
 
 （4）：算法保证了Sa = Sb = S，故密钥交换成功，S为密钥（预主密钥）。
-
-
 
 上述密钥交换流程中，和RSA密钥交换有较大不同，DHE密钥交换时，服务器私钥没有参与进来。也就是说，私钥即使泄漏，也不会导致会话加密密钥S被第三方解密。
 
@@ -52,71 +42,37 @@ DHE算法流程文字描述如下：
 
 DHE参数和Pb都是通过server key exchange发送给客户端，Pa通过client key exchange发送给服务器。server key exchange的结尾处需要使用服务器私钥对该报文本身进行签名，以表明自己拥有私钥
 
-
-
 ## ECDHE
 
 ECDHE的全称叫Elliptic Curve Diffie–Hellman key Exchange椭圆曲线迪非-赫尔曼密钥交换，它是迪非-赫尔曼密钥交换的变种，使用椭圆曲线加密提高安全性。
-
-
 
 只要理解DHE密钥交换原理，那么理解ECDHE密钥交换原理其实并不难（如果不想深究的话）。
 
 ECDHE的运算是把DHE中模幂运算替换成了点乘运算，速度更快，可逆更难。
 
- 
-
 ECDHE算法流程文字描述如下：
 
-（1）：客户端随机生成随机值Ra，计算Pa(x, y) = Ra * Q(x, y)，Q(x, y)为全世界公认的某个椭圆曲线算法的基点。将Pa(x, y)发送至服务器。
+（1）：客户端随机生成随机值Ra，计算Pa\(x, y\) = Ra \* Q\(x, y\)，Q\(x, y\)为全世界公认的某个椭圆曲线算法的基点。将Pa\(x, y\)发送至服务器。
 
-（2）：服务器随机生成随机值Rb，计算Pb(x,y) - Rb * Q(x, y)。将Pb(x, y)发送至客户端。
+（2）：服务器随机生成随机值Rb，计算Pb\(x,y\) - Rb \* Q\(x, y\)。将Pb\(x, y\)发送至客户端。
 
-（3）：客户端计算Sa(x, y) = Ra * Pb(x, y)；服务器计算Sb(x, y) = Rb *Pa(x, y)
+（3）：客户端计算Sa\(x, y\) = Ra _ Pb\(x, y\)；服务器计算Sb\(x, y\) = Rb _Pa\(x, y\)
 
 （4）：算法保证了Sa = Sb = S，提取其中的S的x向量作为密钥（预主密钥）。
 
 ![image-20190620232039177](hdsuan-fa.assets/image-20190620232039177.png)
 
-
-
-  SSL协议中，上图中椭圆曲线名和Pb通过server key exchange报文发送；Pa通过client key exchange报文发送。
-
-
-
-
+SSL协议中，上图中椭圆曲线名和Pb通过server key exchange报文发送；Pa通过client key exchange报文发送。
 
 ## ECDH
 
- 
-
 字面少了一个E，E代表了“临时”，即在握手流程中，作为服务器端，ECDH少了一步计算Pb的过程，Pb用证书中的公钥代替，而证书对应的私钥就是Xb。由此可见，使用ECDH密钥交换算法，服务器必须采用ECC证书；服务器不发送server key exchange报文，因为发送certificate报文时，证书本身就包含了Pb信息。
-
-
 
 ## 几种算法的安全性
 
-
-
 ECDHE（DHE）算法属于DH类密钥交换算法， 私钥不参与密钥的协商，故即使私钥泄漏，客户端和服务器之间加密的报文都无法被解密，这叫 前向安全（forward secrity）。由于ECDHE每条会话都重新计算一个密钥（Ra、Rb），故一条会话被解密后，其他会话仍旧安全。
 
-然而，ECDH算法服务器端的私钥是固定的，即证书的私钥作为Rb，故ECDH不被认为前向安全，因为私钥泄漏相当于Rb泄漏，Rb泄漏，导致会话密钥可被第三方计算。ECDH交换算法已经被OpenSSL废弃:https://github.com/openssl/openssl/commit/ce0c1f2bb2fd296f10a2847844205df0ed95fb8e#diff-d615181712e5a3ed0a51d3222d96e1d4  
+然而，ECDH算法服务器端的私钥是固定的，即证书的私钥作为Rb，故ECDH不被认为前向安全，因为私钥泄漏相当于Rb泄漏，Rb泄漏，导致会话密钥可被第三方计算。ECDH交换算法已经被OpenSSL废弃:[https://github.com/openssl/openssl/commit/ce0c1f2bb2fd296f10a2847844205df0ed95fb8e\#diff-d615181712e5a3ed0a51d3222d96e1d4](https://github.com/openssl/openssl/commit/ce0c1f2bb2fd296f10a2847844205df0ed95fb8e#diff-d615181712e5a3ed0a51d3222d96e1d4)
 
-
-
-**总结:目前主要以 ECDHE(google) 算法为主**
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
+**总结:目前主要以 ECDHE\(google,百度\) 算法为主，证书签名使用RSA，对称加密用AES**
 
