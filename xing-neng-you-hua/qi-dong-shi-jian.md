@@ -36,7 +36,7 @@ App开始启动后，系统首先加载可执行文件（自身App的所有.o文
 
 在main()被调用之后，App的主要工作就是初始化必要的服务，显示首页内容等。而我们的优化也是围绕如何能够快速展现首页来开展。 App通常在AppDelegate类中的- (BOOL)Application:(UIApplication *)Application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions方法中创建首页需要展示的view，然后在当前runloop的末尾，主动调用CA::Transaction::commit完成视图的渲染。 
 
-对于main()函数调用之前我们可以优化的点有：
+对于main()函数调后之前我们可以优化的点有：
 
 1. 纯代码方式而不是storyboard加载首页UI。
 2. 对didFinishLaunching里的函数考虑能否挖掘可以延迟加载或者懒加载，需要与各个业务方pm和rd共同check 对于一些已经下线的业务，删减冗余代码。 
