@@ -95,7 +95,7 @@
   * 哈希表
   * [数组和链表的区别](shu-ju-jie-gou/shu-zu-he-lian-biao-de-qu-bie.md)
 * [计算机原理](ji-suan-ji-yuan-li.md)
-  * 进程间通信方式
+  * [进程间通信方式](ji-suan-ji-yuan-li/jin-cheng-jian-tong-xin-fang-shi.md)
   * 程序编译过程
   * 内存区域的划分
 
