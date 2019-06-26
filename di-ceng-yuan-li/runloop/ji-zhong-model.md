@@ -1,1 +1,5 @@
-1
+kCFRynLoopDefaultMode：App的默认Mode,通常主线程是在这个Mode下运行
+UITrackingRunLoopMode：界面跟踪Mode,用于ScrollView追踪触摸滑动，保证界面滑动时不受其他Mode影响
+kCFRunLoopCommonModes：这是一个占位用的Mode，不是一种真正的Mode
+UIInitializationRunLoopMode：在刚启动App时进入的第一个Mode，启动完成后不再使用
+GSEventReceiveRunLoopMode：接受系统事件的内部Mode，通常用不到
