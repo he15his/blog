@@ -17,6 +17,7 @@
     * [tableview优化](xing-neng-you-hua/tableviewyou-hua.md)
     * [电量优化](xing-neng-you-hua/dian-liang-you-hua.md)
     * [网络安全优化](xing-neng-you-hua/wang-luo-an-quan-you-hua.md)
+    * [APP启动连续闪退检测](xing-neng-you-hua/appqi-dong-lian-xu-shan-tui-jian-ce.md)
   * [开源库](kai-yuan-ku.md)
     * [SDWebImage](kai-yuan-ku/sdwebimage.md)
     * [YY](kai-yuan-ku/yy.md)
