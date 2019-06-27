@@ -100,5 +100,5 @@
 * [计算机原理](ji-suan-ji-yuan-li.md)
   * [进程间通信方式](ji-suan-ji-yuan-li/jin-cheng-jian-tong-xin-fang-shi.md)
   * [程序编译过程](ji-suan-ji-yuan-li/cheng-xu-bian-yi-guo-cheng.md)
-  * 内存区域的划分
+  * [内存区域的划分](ji-suan-ji-yuan-li/nei-cun-qu-yu-de-hua-fen.md)
 
