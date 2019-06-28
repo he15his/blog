@@ -48,6 +48,7 @@
     * [线程安全](xian-cheng-an-quan.md)
     * [几种创建方式的异同](ji-zhong-chuang-jian-fang-shi-de-yi-tong.md)
     * [如何高效的使用多线程](ru-he-gao-xiao-de-shi-yong-duo-xian-cheng.md)
+    * [线程过多坏处](xian-cheng-guo-duo-huai-chu.md)
   * 其它
     * [MVVM MVC](mvvm-mvc.md)
     * [模块化](mo-kuai-hua.md)
