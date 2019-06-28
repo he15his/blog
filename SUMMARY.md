@@ -48,7 +48,6 @@
     * [线程安全](xian-cheng-an-quan.md)
     * [几种创建方式的异同](ji-zhong-chuang-jian-fang-shi-de-yi-tong.md)
     * [如何高效的使用多线程](ru-he-gao-xiao-de-shi-yong-duo-xian-cheng.md)
-    * [线程过多坏处](xian-cheng-guo-duo-huai-chu.md)
   * 其它
     * [MVVM MVC](mvvm-mvc.md)
     * [模块化](mo-kuai-hua.md)
@@ -103,5 +102,6 @@
   * [进程间通信方式](ji-suan-ji-yuan-li/jin-cheng-jian-tong-xin-fang-shi.md)
   * [程序编译过程](ji-suan-ji-yuan-li/cheng-xu-bian-yi-guo-cheng.md)
   * [内存区域的划分](ji-suan-ji-yuan-li/nei-cun-qu-yu-de-hua-fen.md)
+  * [线程相关问题](xian-cheng-guo-duo-huai-chu.md)
 * [常用命令](chang-yong-ming-ling.md)
 
