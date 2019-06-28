@@ -44,9 +44,10 @@
     * [kvo](di-ceng-yuan-li/kvo.md)
     * [Tagged Pointer](di-ceng-yuan-li/tagged-pointer.md)
     * [arc](di-ceng-yuan-li/arc.md)
-  * 多线程
+  * [多线程](duo-xian-cheng.md)
     * [线程安全](xian-cheng-an-quan.md)
     * [几种创建方式的异同](ji-zhong-chuang-jian-fang-shi-de-yi-tong.md)
+    * [如何高效的使用多线程](ru-he-gao-xiao-de-shi-yong-duo-xian-cheng.md)
   * 其它
     * [MVVM MVC](mvvm-mvc.md)
     * [模块化](mo-kuai-hua.md)
