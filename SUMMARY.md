@@ -98,6 +98,7 @@
   * [翻转二叉数](suan-fa/fan-zhuan-er-cha-shu.md)
   * [算法题](suan-fa/suan-fa-ti.md)
     * [回文数](suan-fa/hui-wen-shu.md)
+    * 分糖果
 * [数据结构](shu-ju-jie-gou.md)
   * [链表](shu-ju-jie-gou/lian-biao.md)
   * [树](shu-ju-jie-gou/shu.md)
