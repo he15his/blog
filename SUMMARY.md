@@ -90,7 +90,7 @@
     * [堆排序](suan-fa/pai-xu/dui-pai-xu.md)
     * [希尔排序](suan-fa/pai-xu/xi-er-pai-xu.md)
     * [计数排序](suan-fa/pai-xu/ji-shu-pai-xu.md)
-    * 桶排序
+    * [桶排序](suan-fa/pai-xu/tong-pai-xu.md)
   * [查找](suan-fa/cha-zhao.md)
     * [顺序查找](suan-fa/cha-zhao/shun-xu-cha-zhao.md)
     * [有序表查找](suan-fa/cha-zhao/you-xu-biao-cha-zhao.md)
