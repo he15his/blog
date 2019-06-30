@@ -94,9 +94,9 @@
     * [线性索引查找](suan-fa/cha-zhao/xian-xing-suo-yin-cha-zhao.md)
     * [无序数组查找值](suan-fa/cha-zhao/wu-xu-shu-zu-cha-zhao-zhi.md)
 * [数据结构](shu-ju-jie-gou.md)
-  * 链表
-  * 树
-  * 哈希表
+  * [链表](shu-ju-jie-gou/lian-biao.md)
+  * [树](shu-ju-jie-gou/shu.md)
+  * [哈希表](shu-ju-jie-gou/ha-xi-biao.md)
   * [数组和链表的区别](shu-ju-jie-gou/shu-zu-he-lian-biao-de-qu-bie.md)
 * [计算机原理](ji-suan-ji-yuan-li.md)
   * [进程间通信方式](ji-suan-ji-yuan-li/jin-cheng-jian-tong-xin-fang-shi.md)
