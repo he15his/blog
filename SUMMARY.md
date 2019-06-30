@@ -96,7 +96,7 @@
     * [无序数组查找值](suan-fa/cha-zhao/wu-xu-shu-zu-cha-zhao-zhi.md)
   * [二分法](suan-fa/er-fen-fa.md)
   * [翻转二叉数](suan-fa/fan-zhuan-er-cha-shu.md)
-  * 算法题
+  * [算法题](suan-fa/suan-fa-ti.md)
     * [回文数](suan-fa/hui-wen-shu.md)
 * [数据结构](shu-ju-jie-gou.md)
   * [链表](shu-ju-jie-gou/lian-biao.md)
