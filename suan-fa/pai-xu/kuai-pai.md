@@ -1,59 +1,119 @@
 # 快排
 
-1）选择一个基准元素,通常选择第一个元素或者最后一个元素,
-
-2）通过一趟排序讲待排序的记录分割成独立的两部分，其中一部分记录的元素值均比基准元素值小。另一部分记录的 元素值比基准值大。
-
-3）此时基准元素在其排好序后的正确位置
-
-4）然后分别对这两部分记录用同样的方法继续进行排序，直到整个序列有序。
+快速排序的核心思想也是分治法，分而治之。它的实现方式是每次从序列中选出一个基准值，其他数依次和基准值做比较，比基准值大的放右边，比基准值小的放左边，然后再对左边和右边的两组数分别选出一个基准值，进行同样的比较移动，重复步骤，直到最后都变成单个元素，整个数组就成了有序的序列。
 
 
 
-```c
-//快速排序
-void fastSort(int *a, int left, int right)
-{
-    if(left >= right)/*如果左边索引大于或者等于右边的索引就代表已经整理完成一个组了*/
-    {
-        return ;
+### 单边扫描
+
+快速排序的关键之处在于切分，切分的同时要进行比较和移动，这里介绍一种叫做单边扫描的做法。
+
+我们随意抽取一个数作为基准值，同时设定一个标记 mark 代表左边序列最右侧的下标位置，当然初始为 0 ，接下来遍历数组，如果元素大于基准值，无操作，继续遍历，如果元素小于基准值，则把 mark + 1 ，再将 mark 所在位置的元素和遍历到的元素交换位置，mark 这个位置存储的是比基准值小的数据，当遍历结束后，将基准值与 mark 所在元素交换位置即可。
+
+#### 代码实现：
+
+```
+public static void sort(int[] arr) {
+    sort(arr， 0， arr.length - 1);
+}
+
+private static void sort(int[] arr， int startIndex， int endIndex) {
+    if (endIndex <= startIndex) {
+        return;
     }
-    int i = left;
-    int j = right;
-    int key = a[left];
-    
-    while(i < j)                               /*控制在当组内寻找一遍*/
-    {
-        while(i < j && a[j] <= key)
-        /*而寻找结束的条件就是，1，找到一个小于或者大于key的数（大于或小于取决于你想升
-         序还是降序）2，没有符合条件1的，并且i与j的大小没有反转*/
-        {
-            j--;/*向前寻找*/
+    //切分
+    int pivotIndex = partitionV2(arr， startIndex， endIndex);
+    sort(arr， startIndex， pivotIndex-1);
+    sort(arr， pivotIndex+1， endIndex);
+}
+
+private static int partition(int[] arr， int startIndex， int endIndex) {
+    int pivot = arr[startIndex];//取基准值
+    int mark = startIndex;//Mark初始化为起始下标
+
+    for(int i=startIndex+1; i<=endIndex; i++){
+        if(arr[i]<pivot){
+            //小于基准值 则mark+1，并交换位置。
+            mark ++;
+            int p = arr[mark];
+            arr[mark] = arr[i];
+            arr[i] = p;
         }
-        
-        a[i] = a[j];
-        /*找到一个这样的数后就把它赋给前面的被拿走的i的值（如果第一次循环且key是
-         a[left]，那么就是给key）*/
-        
-        while(i < j && key <= a[i])
-        /*这是i在当组内向前寻找，同上，不过注意与key的大小关系停止循环和上面相反，
-         因为排序思想是把数往两边扔，所以左右两边的数大小与key的关系相反*/
-        {
-            i++;
-        }
-        
-        a[j] = a[i];
-        
-        for (int i = 0; i < 10; i++) {
-            printf("%d  ", a[i]);
-        }
-        printf("\n");
     }
-    
-    a[i] = key;/*当在当组内找完一遍以后就把中间数key回归*/
-    fastSort(a, left, i - 1);/*最后用同样的方式对分出来的左边的小组进行同上的做法*/
-    fastSort(a, i + 1, right);/*用同样的方式对分出来的右边的小组进行同上的做法*/
-    /*当然最后可能会出现很多分左右，直到每一组的i = j 为止*/
+    //基准值与mark对应元素调换位置
+    arr[startIndex] = arr[mark];
+    arr[mark] = pivot;
+    return mark;
 }
 ```
 
+### 双边扫描
+
+另外还有一种双边扫描的做法，看起来比较直观：我们随意抽取一个数作为基准值，然后从数组左右两边进行扫描，先从左往右找到一个大于基准值的元素，将下标指针记录下来，然后转到从右往左扫描，找到一个小于基准值的元素，交换这两个元素的位置，重复步骤，直到左右两个指针相遇，再将基准值与左侧最右边的元素交换。
+
+我们来看一下实现代码，不同之处只有 partition 方法：
+
+```
+public static void sort(int[] arr) {
+    sort(arr， 0， arr.length - 1);
+}
+
+private static void sort(int[] arr， int startIndex， int endIndex) {
+    if (endIndex <= startIndex) {
+        return;
+    }
+    //切分
+    int pivotIndex = partition(arr， startIndex， endIndex);
+    sort(arr， startIndex， pivotIndex-1);
+    sort(arr， pivotIndex+1， endIndex);
+}
+
+
+private static int partition(int[] arr， int startIndex， int endIndex) {
+    int left = startIndex;
+    int right = endIndex;
+    int pivot = arr[startIndex];//取第一个元素为基准值
+
+    while (true) {
+        //从左往右扫描
+        while (arr[left] <= pivot) {
+            left++;
+            if (left == right) {
+                break;
+            }
+        }
+
+        //从右往左扫描
+        while (pivot < arr[right]) {
+            right--;
+            if (left == right) {
+                break;
+            }
+        }
+
+        //左右指针相遇
+        if (left >= right) {
+            break;
+        }
+
+        //交换左右数据
+        int temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+    }
+
+    //将基准值插入序列
+    int temp = arr[startIndex];
+    arr[startIndex] = arr[right];
+    arr[right] = temp;
+    return right;
+}
+```
+
+### 极端情况
+
+快速排序的时间复杂度和归并排序一样，O(n log n)，但这是建立在每次切分都能把数组一刀切两半差不多大的前提下，如果出现极端情况，比如排一个有序的序列，如[ 9，8，7，6，5，4，3，2，1 ]，选取基准值 9 ，那么需要切分 n - 1 次才能完成整个快速排序的过程，这种情况下，时间复杂度就退化成了 O(n2)，当然极端情况出现的概率也是比较低的。
+
+所以说，快速排序的时间复杂度是 O(nlogn)，极端情况下会退化成 O(n2)，为了避免极端情况的发生，选取基准值应该做到随机选取，或者是打乱一下数组再选取。
+
+另外，快速排序的空间复杂度为 O(1)。
