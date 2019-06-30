@@ -100,6 +100,7 @@
 * [数据结构](shu-ju-jie-gou.md)
   * [链表](shu-ju-jie-gou/lian-biao.md)
   * [树](shu-ju-jie-gou/shu.md)
+    * 树的遍历
   * [哈希表](shu-ju-jie-gou/ha-xi-biao.md)
   * [数组和链表的区别](shu-ju-jie-gou/shu-zu-he-lian-biao-de-qu-bie.md)
 * [计算机原理](ji-suan-ji-yuan-li.md)
