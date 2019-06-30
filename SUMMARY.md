@@ -97,7 +97,7 @@
   * [二分法](suan-fa/er-fen-fa.md)
   * [翻转二叉数](suan-fa/fan-zhuan-er-cha-shu.md)
   * 算法题
-    * 回文数
+    * [回文数](suan-fa/hui-wen-shu.md)
 * [数据结构](shu-ju-jie-gou.md)
   * [链表](shu-ju-jie-gou/lian-biao.md)
   * [树](shu-ju-jie-gou/shu.md)
