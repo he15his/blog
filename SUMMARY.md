@@ -99,6 +99,7 @@
   * [算法题](suan-fa/suan-fa-ti.md)
     * [回文数](suan-fa/hui-wen-shu.md)
     * [分糖果](suan-fa/fen-tang-guo.md)
+    * [缺失数字](suan-fa/que-shi-shu-zi.md)
 * [数据结构](shu-ju-jie-gou.md)
   * [链表](shu-ju-jie-gou/lian-biao.md)
   * [树](shu-ju-jie-gou/shu.md)
