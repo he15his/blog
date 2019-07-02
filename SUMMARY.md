@@ -53,6 +53,7 @@
     * [MVVM MVC](mvvm-mvc.md)
     * [模块化](mo-kuai-hua.md)
     * [Cocoapods](cocoapods.md)
+      * podinstall过程
     * [自动化构建](zi-dong-hua-gou-jian.md)
     * [响应链](xiang-ying-lian.md)
     * [Native与js交互](nativeyu-js-jiao-hu.md)
