@@ -59,6 +59,7 @@
       * [install\_update区别](cocoapods/installupdate-qu-bie.md)
     * [Native与js交互](nativeyu-js-jiao-hu.md)
     * [H5启动速度优化](h5qi-dong-su-du-you-hua.md)
+    * 离屏渲染
 * [Python](python.md)
 * [网络](wang-luo.md)
   * [http](wang-luo/http.md)

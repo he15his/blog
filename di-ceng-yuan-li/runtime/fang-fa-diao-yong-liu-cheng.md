@@ -1,6 +1,5 @@
 熟悉OC语言的Runtime\(运行时\)机制以及对象方法调用机制的开发者都知道，所有OC方法调用在编译时都会转化为对C函数objc\_msgSend的调用。
 
-  
 寻找IMP的过程:  
 1. 先从当前class的cache方法列表（cache methodLists）里去找  
 2. 找到了，跳到对应函数实现  
