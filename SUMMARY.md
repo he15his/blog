@@ -56,7 +56,7 @@
     * [响应链](xiang-ying-lian.md)
     * [Cocoapods](cocoapods.md)
       * [podinstall过程](cocoapods/podinstallguo-cheng.md)
-      * install\_update区别
+      * [install\_update区别](cocoapods/installupdate-qu-bie.md)
     * [Native与js交互](nativeyu-js-jiao-hu.md)
     * [H5启动速度优化](h5qi-dong-su-du-you-hua.md)
 * [Python](python.md)
