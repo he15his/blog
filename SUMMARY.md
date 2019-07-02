@@ -52,10 +52,11 @@
   * 其它
     * [MVVM MVC](mvvm-mvc.md)
     * [模块化](mo-kuai-hua.md)
-    * [Cocoapods](cocoapods.md)
-      * [podinstall过程](cocoapods/podinstallguo-cheng.md)
     * [自动化构建](zi-dong-hua-gou-jian.md)
     * [响应链](xiang-ying-lian.md)
+    * [Cocoapods](cocoapods.md)
+      * [podinstall过程](cocoapods/podinstallguo-cheng.md)
+      * install\_update区别
     * [Native与js交互](nativeyu-js-jiao-hu.md)
     * [H5启动速度优化](h5qi-dong-su-du-you-hua.md)
 * [Python](python.md)
