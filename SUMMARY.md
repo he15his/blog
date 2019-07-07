@@ -124,6 +124,6 @@
   * [内存区域的划分](ji-suan-ji-yuan-li/nei-cun-qu-yu-de-hua-fen.md)
   * [线程相关问题](xian-cheng-guo-duo-huai-chu.md)
   * [上下文切换与多线程实现的代价](ji-suan-ji-yuan-li/shang-xia-wen-qie-huan-yu-duo-xian-cheng-shi-xian-de-dai-jia.md)
-  * 堆和栈的区别
+  * [堆和栈的区别](ji-suan-ji-yuan-li/dui-he-zhan-de-qu-bie.md)
 * [常用命令](chang-yong-ming-ling.md)
 
