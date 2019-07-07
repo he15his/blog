@@ -109,6 +109,7 @@
     * [分糖果](suan-fa/fen-tang-guo.md)
     * [缺失数字](suan-fa/que-shi-shu-zi.md)
     * [大量数据中最小的N个数](suan-fa/da-liang-shu-ju-zhong-zui-xiao-de-n-ge-shu.md)
+    * 一个数是否在 40 亿个整数中
   * [位运算](suan-fa/wei-yun-suan.md)
 * [数据结构](shu-ju-jie-gou.md)
   * [链表](shu-ju-jie-gou/lian-biao.md)
