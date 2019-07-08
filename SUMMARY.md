@@ -111,7 +111,7 @@
     * [大量数据中最小的N个数](suan-fa/da-liang-shu-ju-zhong-zui-xiao-de-n-ge-shu.md)
     * [一个数是否在 40 亿个整数中](suan-fa/yi-ge-shu-shi-fou-zai-40-yi-ge-zheng-shu-zhong.md)
     * [前 K 个高频元素告诉你桶排序有啥用](suan-fa/qian-k-ge-gao-pin-yuan-su-gao-su-ni-tong-pai-xu-you-sha-yong.md)
-    * 删除排序数组中的重复项
+    * [删除排序数组中的重复项](suan-fa/shan-chu-pai-xu-shu-zu-zhong-de-zhong-fu-xiang.md)
   * [位运算](suan-fa/wei-yun-suan.md)
 * [数据结构](shu-ju-jie-gou.md)
   * [链表](shu-ju-jie-gou/lian-biao.md)
