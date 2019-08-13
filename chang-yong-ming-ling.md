@@ -38,6 +38,12 @@ git reset id
 
  `pod repo remove name`
 
+### 更新源
+
+ `pod repo update`
+
+更新指定源 ` pod repo update /Users/username/.cocoapods/repos/master/Specs`
+
 ### 安装库
 
 `pod install --no-repo-update`
